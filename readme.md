@@ -25,10 +25,11 @@ any result, enable the (normally included) "debug" property. It will then post i
 
 ## Installing Domaineer
 
-At this moment (July 20th, 2011, 10:18pm GMT +2) Domaineer has not been wrapped up into a package yet (though I welcome
-pull requests!) and you will have to install it manually. That's quite easy.
+Domaineer has been added to the MODX Repository and can be installed from there.
 
-Just copy the contents of the "domaineer.plugin.php" to a new Plugin called "Domaineer", and tick the "OnWebPageInit"
+Alternatively, you could install it manually as follows:
+
+Copy the contents of the "domaineer.plugin.php" to a new Plugin called "Domaineer", and tick the "OnWebPageInit"
 system event on the System Events tab. Next follow the above "How to use Domaineer" section to get something done!
 
 ## Property value
