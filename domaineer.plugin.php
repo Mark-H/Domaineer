@@ -20,7 +20,10 @@
  * Suite 330, Boston, MA 02111-1307 USA
  *
  */
-
+/* @var modX $modx
+ * @var array $scriptProperties 
+ */
+$debug = (isset($scriptProperties['debug'])) ? $scriptProperties['debug'] : false;
 $eventName = $modx->event->name;
 switch($eventName) {
     case 'OnWebPageInit':
@@ -38,7 +41,7 @@ switch($eventName) {
         }
 
         // Lets see if we have an entry for the current host
-        if ($scriptProperties[$host]) {
+        if (isset($scriptProperties[$host]) && !empty($scriptProperties[$host])) {
             // We found something, let's make that clear if we're debugging and output what we got.
             if ($debug) { $modx->log(1,'Properties found for '.$host.': '.print_r($scriptProperties[$host],true)); }
 

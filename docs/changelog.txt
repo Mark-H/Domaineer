@@ -1,3 +1,7 @@
+Domaineer 1.0.1-pl
+------------------
+Fix some E_STRICT / E_NOTICE errors in the plugin.
+
 Domaineer 1.0.0-pl
 ------------------
 
